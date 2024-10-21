@@ -53,3 +53,29 @@ Entre em contato para mais informações ou sugestões. Oferecemos um formulári
    ```bash
    cd Site-IA
 3. Abra o arquivo **index.html** no seu navegador
+
+## Contribuindo
+Contribuições são bem-vindas! Se você deseja adicionar novas seções, corrigir bugs ou melhorar o design, siga estas etapas:
+
+1. Faça um fork do repositório.
+
+2. Crie uma branch para sua alterações:
+    ```bash
+    git checkout -b minha-nova-feature
+
+3. Faça suas alterações e comite:
+   ```bash
+   git commit -m "Adiciona nova seção sobre IA"
+
+4. Envie suas alterações:
+   ```bash
+   git push origin minha-nova-feature
+
+5. Abra um Pull Request.
+
+
+## Contato
+Se você tiver dúvidas ou sugestões, sinta-se à vontade para entrar em contato:
+
+- Email: talisontalison57@gmail.com
+- LinkedIn: https://www.linkedin.com/in/talisson-pontes-rodrigues-93a606230/
