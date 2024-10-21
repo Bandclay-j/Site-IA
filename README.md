@@ -40,8 +40,9 @@ Entre em contato para mais informações ou sugestões. Oferecemos um formulári
 
 - **HTML5**: Estruturação do conteúdo.
 - **CSS3**: Estilização e design responsivo.
+
+  ### Em desenvolvimento
 - **JavaScript**: Navegação dinâmica e interativa.
-- **Node.js** (futuro): Para gerenciamento de conteúdo dinâmico (em desenvolvimento).
 
 ## Como Executar o Projeto Localmente
 
