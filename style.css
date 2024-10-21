@@ -1,0 +1,479 @@
+/* Resetando margens e paddings para manter consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilo padrão do corpo da página */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url(/img/imagem-background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    min-height: 100%;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #222222;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    padding: 15px;
+}
+
+/* Links de navegação dentro do cabeçalho */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    border: 1px solid rgba(105, 105, 105, 0.678);
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Estilos gerais das seções */
+section {
+    margin: 40px auto;
+    color: white;
+}
+
+/* Títulos das seções */
+h2 {
+    margin-bottom: 35px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-size: 1rem;
+    margin: 10px 10px;
+}
+
+/* Estilo da lista */
+.lista-ia {
+    width: 80%;
+    margin: 30px auto;
+    text-align: center;
+    background-color: rgba(121, 121, 121, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.lista-ia h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.lista-ia .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lista-ia ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.lista-ia ul li {
+   padding: 10px;
+   margin: 10px 0;
+   background-color: rgba(0,0,0,0.7);
+   color: white;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+   text-align: left;
+}
+
+.lista-ia img {
+    max-width: 40%;
+    height: auto;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo do carrossel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+    width:50%;
+    animation: slide 21s infinite linear;
+}
+
+.carousel-item {
+    width: 10%;
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.carousel-item figcaption {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-599%); }
+}
+
+/* Estilo da tabela */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgba(121, 121, 121, 0.2);
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #a0a0a0;
+    background-color: rgba(255, 255, 255, 0.753);
+    color: black;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+.botoes {
+    width: 90px;
+    height: 30px;
+    background-color: #c0c0c0;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.botoes a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    display: block;
+    height: 50%;
+}
+
+.botoes:hover, .botoes a:hover {
+    background-color: #a9a9a9;
+}
+
+#vantagens {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#vantagens ul {
+    list-style: none;
+    padding: 0;
+}
+
+#vantagens ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(121, 121, 121, 0.2);
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#desafios {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#desafios ul {
+    list-style: none;
+    padding: 0;
+}
+
+#desafios ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: rgba(121, 121, 121, 0.2);
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/*Galeria de imagens*/
+#pessoa ul {
+    list-style: none;
+    padding: 0;
+}
+
+#pessoa ul li {
+    margin: 30px 0;
+    padding: 10px;
+    background-color: rgba(121, 121, 121, 0.2);
+    border: 1px solid white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+#pessoa ul li h3 {
+    margin: 0;
+    padding: 0;
+}
+
+#pessoa ul li .gallery {
+    display: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 10px;
+}
+
+#pessoa ul li:hover .gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pessoa ul li .gallery img {
+    max-width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo do formulário */
+ #contato {
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: white;
+    max-width: 400px;
+    position: relative;
+    background-image: url(/img/imagem-contato.jpg);
+    background-size: cover;
+    color: white;
+    border: 1px solid #ccc;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
+
+
+
+/* Media queries para responsividade */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .lista-ia {
+        width: 90%;
+    }
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+    #vantagens, #desafios {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .lista-ia {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .lista-ia .content {
+        flex-direction: column;
+    }
+
+    .lista-ia img {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+    #vantagens, #desafios {
+        width: 90%;
+    }
+
+    #contato {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    #img {
+        height: 150px;
+    }
+
+    form input, form textarea {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body::before {
+        height: 100%;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    .lista-ia h3 {
+       font-size: 1.2rem;
+    }
+
+    .carousel-inner {
+        width: 100%;
+    }
+
+    #vantagens, #desafios {
+        width: 100%;
+    }
+
+    #contato {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #img {
+        height: 100px;
+    }
+
+    form input, form textarea {
+        padding: 6px;
+    }
+
+    form button {
+        padding: 6px 12px;
+    }
+}
